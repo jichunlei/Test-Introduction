@@ -1,9 +1,7 @@
 package com.jmock.demos.basic;
 
 import java.util.Calendar;
-
 import org.junit.Test;
-
 import mockit.Expectations;
 
 /**
