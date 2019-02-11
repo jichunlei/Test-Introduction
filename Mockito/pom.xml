@@ -6,26 +6,18 @@
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.8</java-version>
-		<jmock-version>1.36</jmock-version>
+		<mockito-version>1.9.5</mockito-version>
 		<junit-version>4.12</junit-version>
 		<spring-version>3.2.4.RELEASE</spring-version>
-		<dubbo-version>2.7.0-SNAPSHOT</dubbo-version>
-		<rocketmq-version>3.2.6</rocketmq-version>
 	</properties>
 	<dependencies>
 		<!-- 先声明jmockit的依赖 -->
 		<dependency>
-			<groupId>org.jmockit</groupId>
-			<artifactId>jmockit</artifactId>
-			<version>${jmock-version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-		    <groupId>org.mockito</groupId>
-		    <artifactId>mockito-core</artifactId>
-		    <version>1.9.5</version>
-		    <scope>test</scope>
-		</dependency>
+          <groupId>org.mockito</groupId>
+          <artifactId>mockito-all</artifactId>
+          <version>${mockito-version}</version>
+          <scope>test</scope>
+        </dependency>
 		<!-- 再声明junit的依赖 -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -53,32 +45,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${spring-version}</version>
-		</dependency>
-		<dependency>
-			<artifactId>servlet-api</artifactId>
-			<groupId>javax.servlet</groupId>
-			<version>2.5</version>
-		</dependency>
-		<!-- dubbo 依赖 -->
-		<!-- <dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-config-spring</artifactId>
-			<version>${dubbo-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-registry-zookeeper</artifactId>
-			<version>${dubbo-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.alibaba.rocketmq</groupId>
-			<artifactId>rocketmq-client</artifactId>
-			<version>${rocketmq-version}</version>
-		</dependency> -->
-		<dependency>
-		    <groupId>org.json</groupId>
-		    <artifactId>json</artifactId>
-		    <version>20180813</version>
 		</dependency>
 	</dependencies>
 	<build>
